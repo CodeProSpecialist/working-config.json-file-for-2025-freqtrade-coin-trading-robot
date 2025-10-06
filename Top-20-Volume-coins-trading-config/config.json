@@ -40,7 +40,8 @@
         },
         "pair_whitelist": [],
         "pair_blacklist": [
-            "USDT/USD"
+            "USDT/USD",
+            "USDG/USD"
         ]
     },
     "pairlists": [
