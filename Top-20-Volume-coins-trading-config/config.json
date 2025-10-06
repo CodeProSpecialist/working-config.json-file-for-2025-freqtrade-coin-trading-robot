@@ -39,7 +39,9 @@
             "rateLimit": 1000
         },
         "pair_whitelist": [],
-        "pair_blacklist": []
+        "pair_blacklist": [
+            "USDT/USD"
+        ]
     },
     "pairlists": [
         {
