@@ -108,8 +108,5 @@
     "trailing_stop": true,
     "trailing_stop_positive": 0.01,
     "trailing_stop_positive_offset": 0.015,
-    "trailing_only_offset_is_reached": true,
-    "freqai": {
-        "enabled": true
-    }
+    "trailing_only_offset_is_reached": true  
 }
