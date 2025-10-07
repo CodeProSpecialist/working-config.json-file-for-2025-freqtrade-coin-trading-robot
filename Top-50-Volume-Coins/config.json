@@ -54,7 +54,8 @@
             "sort_key": "quoteVolume",
             "min_value": 10000,
             "refresh_period": 86400,
-            "lookback_days": 1
+            "lookback_days": 1,
+            "timeframe": "1m"
         },
         {
             "method": "AgeFilter",
