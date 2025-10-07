@@ -33,7 +33,9 @@
         "name": "kraken",
         "key": "***************",
         "secret": "***************",
-        "ccxt_config": {"enableRateLimit": true},
+        "ccxt_config": {
+            "enableRateLimit": true
+        },
         "ccxt_async_config": {
             "enableRateLimit": true,
             "rateLimit": 1000
@@ -47,10 +49,32 @@
     "pairlists": [
         {
             "method": "VolumePairList",
-            "number_assets": 20,
+            "number_assets": 50,
             "sort_key": "quoteVolume",
-            "min_value": 0,
+            "min_value": 1000000,
+            "refresh_period": 300,
+            "lookback_days": 1
+        },
+        {
+            "method": "AgeFilter",
+            "min_days_listed": 180
+        },
+        {
+            "method": "RangeStabilityFilter",
+            "lookback_days": 180,
+            "min_rate_of_change": 0.01,
             "refresh_period": 300
+        },
+        {
+            "method": "VolatilityFilter",
+            "max_volatility": 0.15,
+            "min_volatility": 0.02,
+            "lookback_period_days": 180,
+            "refresh_period": 300
+        },
+        {
+            "method": "ShuffleFilter",
+            "seed": 42
         }
     ],
     "telegram": {
@@ -84,5 +108,8 @@
     "trailing_stop": true,
     "trailing_stop_positive": 0.01,
     "trailing_stop_positive_offset": 0.015,
-    "trailing_only_offset_is_reached": true
+    "trailing_only_offset_is_reached": true,
+    "freqai": {
+        "enabled": true
+    }
 }
