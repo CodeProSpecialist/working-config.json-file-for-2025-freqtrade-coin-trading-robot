@@ -52,7 +52,7 @@
             "method": "VolumePairList",
             "number_assets": 50,
             "sort_key": "quoteVolume",
-            "min_value": 1000000,
+            "min_value": 10000,
             "refresh_period": 86400,
             "lookback_days": 1
         },
