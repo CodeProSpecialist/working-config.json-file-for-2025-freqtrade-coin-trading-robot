@@ -13,9 +13,8 @@ freqtrade trade --userdir ~/freqtrade_data/user_data --config ~/freqtrade_data/c
 In Linux, copy the following to 
 the bottom of ~/.bashrc
 
-#below is for freqtrade whitelist coin list 
-# that is generated from a python program 
-# to get profitable coins to buy
+Below is for freqtrade whitelist coin list that is generated from a python program to get profitable coins to buy
+
 export FREQTRADE__EXCHANGE__PAIR_WHITELIST=$(cat ~/freqtrade-whitelist/whitelist.json)
 
 Utulize the following python script to make a profitable coin list. 
