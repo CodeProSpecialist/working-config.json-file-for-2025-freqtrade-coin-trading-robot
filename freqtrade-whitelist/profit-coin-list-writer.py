@@ -8,13 +8,13 @@ import pytz
 API_KEY = 'YOUR_KRAKEN_API_KEY'
 API_SECRET = 'YOUR_KRAKEN_SECRET_KEY'
 
-MIN_2M_CHANGE = 0.20     # +20% in 2 months
+MIN_2M_CHANGE = 0.10     # +10% in 2 months
 MIN_4D_CHANGE = 0.05     # +5% in 4 days
 MIN_24H_CHANGE = 0.01    # +1% in 24 hours
-MIN_PRICE = 75.0         # Price > $75 per coin
+MIN_PRICE = 10.0         # Price > $10 per coin
 MIN_VOLUME = 1000
 TOP_N = 70              # how many pairs to keep
-REFRESH_INTERVAL = 25 * 60 * 60  # 25 hours
+REFRESH_INTERVAL = 24 * 60 * 60  # 24 hours
 
 # ----------------------------------------------------
 kraken = ccxt.kraken({
