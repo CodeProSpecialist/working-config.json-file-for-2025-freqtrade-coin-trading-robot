@@ -9,8 +9,9 @@ freqtrade trade --userdir ~/freqtrade_data/user_data --config ~/freqtrade_data/c
 
 ---------------------
 # Coin List Writer
+First get a Krakin API Key and secret key from their website. 
 
-Utulize the following python script to make a profitable coin list. 
+Utulize the following python script to automatically make a profitable coin list every 24 hours. 
 Place the python script in your 
 home folder, in the directory named 
 freqtrade-whitelist. 
