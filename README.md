@@ -1,11 +1,11 @@
 # working-config.json-file-for-2025-freqtrade-coin-trading-robot
 working config.json file for freqtrade 2025 version. 
 
+Below is for freqtrade whitelist coin list that is generated from a python program to get profitable coins to buy
+
 use this command to run freqtrade on the command line with any strategy:
 
 freqtrade trade --userdir ~/freqtrade_data/user_data --config ~/freqtrade_data/config.json --strategy Bandtastic
-
-
 
 ---------------------
 # Coin List Writer
@@ -13,7 +13,7 @@ freqtrade trade --userdir ~/freqtrade_data/user_data --config ~/freqtrade_data/c
 In Linux, copy the following to 
 the bottom of ~/.bashrc
 
-Below is for freqtrade whitelist coin list that is generated from a python program to get profitable coins to buy
+
 
 export FREQTRADE__EXCHANGE__PAIR_WHITELIST=$(cat ~/freqtrade-whitelist/whitelist.json)
 
