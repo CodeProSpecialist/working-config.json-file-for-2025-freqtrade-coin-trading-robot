@@ -10,13 +10,6 @@ freqtrade trade --userdir ~/freqtrade_data/user_data --config ~/freqtrade_data/c
 ---------------------
 # Coin List Writer
 
-cd ~/
-
-mkdir freqtrade-whitelist
-
-cd freqtrade-whitelist
-
-
 In Linux, copy the following to 
 the bottom of ~/.bashrc
 
@@ -29,6 +22,12 @@ Utulize the following python script to make a profitable coin list.
 Place the python script in your 
 home folder, in the directory named 
 freqtrade-whitelist. 
+
+cd ~/
+
+mkdir freqtrade-whitelist
+
+cd freqtrade-whitelist
 
 python3 profit-coin-list-writer.py
 
