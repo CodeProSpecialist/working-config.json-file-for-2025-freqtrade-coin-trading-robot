@@ -130,7 +130,7 @@ def main():
 
         generate_whitelist()
 
-        print(f"\n⏸ Sleeping for {REFRESH_INTERVAL/3600:.1f} hours (≈25h)...")
+        print(f"\n⏸ Sleeping for {REFRESH_INTERVAL/3600:.1f} hours (≈24h)...")
         for remaining in range(REFRESH_INTERVAL, 0, -3600):
             hours_left = remaining // 3600
             print(f"   ...{hours_left} hours remaining...")
